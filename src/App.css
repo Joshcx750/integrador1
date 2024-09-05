@@ -1,0 +1,17 @@
+/* src/App.css */
+.app-container {
+  background-color: #f28b82; /* Rojo tenue */
+  height: 100vh;            /* Altura completa de la ventana */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;              /* Texto blanco */
+  font-size: 2.5rem;        /* Tamaño del texto */
+  font-family: Arial, sans-serif;  /* Fuente */
+}
