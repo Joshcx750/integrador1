@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './App.css';  // Importa los estilos
-import App from './App.jsx';  // Importa el componente principal
+import React from "react";
+import ReactDOM from "react-dom";
+import "./App.css";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')  // Inserta la app en el div con id="root"
+  document.getElementById("root")
 );
