@@ -4,8 +4,12 @@ import './App.css';
 function App() {
   return (
     <div className="container">
-      {/* Título */}
-      <header>ABCQUIM</header>
+      {/* Imagen en lugar del título */}
+      
+      <header>
+        <img src={`${process.env.PUBLIC_URL}/abc.png`} alt="Logo" className="logo" />
+      </header>
+   
 
       {/* Menú de Logeo */}
       <div className="login-menu">
@@ -19,6 +23,9 @@ function App() {
       <div className="search-section">
         <input type="text" placeholder="Ingresa tu búsqueda..." />
         <button>Buscar</button>
+
+        {/* Botón para acceder al catálogo general */}
+        <button className="catalog-button">Acceder al catálogo general</button>
       </div>
     </div>
   );
