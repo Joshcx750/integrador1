@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-bottom: 150px; /* Espacio para la lista de productos */
 }
 
 header {
@@ -85,4 +86,73 @@ button:hover {
   font-size: 12px;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.product-list {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.product {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-name {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.cart-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+}
+
+.cart-icon img {
+  width: 100%;
+  height: auto;
+}
+
+/* Posicionamiento de las imágenes laterales */
+.side-images {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-image {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.side-image img {
+  width: 500px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
 }
