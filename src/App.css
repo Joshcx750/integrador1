@@ -1,9 +1,9 @@
-
+/*
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2; /* Gris claro */
+  background-color: #f2f2f2; 
 }
 
 .container {
@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 150px; /* Espacio para la lista de productos */
+  padding-bottom: 60px; 
 }
 
 header {
@@ -43,7 +43,7 @@ button {
   padding: 10px 20px;
   margin-left: 10px;
   font-size: 16px;
-  background-color: #007bff; /* Azul */
+  background-color: #007bff; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -51,14 +51,14 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+  background-color: #0056b3; 
 }
 
 .login-menu {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: #28a745; /* Verde */
+  background-color: #28a745; 
   padding: 15px;
   border-radius: 5px;
   display: flex;
@@ -127,7 +127,7 @@ button:hover {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 80px; /* Ajusta el tamaño según sea necesario */
+  width: 80px; 
   height: auto;
 }
 
@@ -136,7 +136,7 @@ button:hover {
   height: auto;
 }
 
-/* Posicionamiento de las imágenes laterales */
+
 .side-images {
   position: absolute;
   top: 50%;
@@ -153,6 +153,272 @@ button:hover {
 }
 
 .side-image img {
-  width: 500px; /* Ajusta el tamaño según sea necesario */
+  width: 500px; 
   height: auto;
+}
+
+
+
+
+
+.product-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product {
+  text-align: center;
+  width: 200px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.product-description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 10px; 
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em; 
+  margin-top: auto;
+}
+
+.footer h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.footer p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+*/
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-bottom: 60px; /* Espacio para el pie de página reducido */
+}
+
+/* Icono del carrito */
+.cart-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Sección de búsqueda */
+.search-section {
+  margin-bottom: 20px;
+}
+
+/* Lista de productos */
+.product-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product {
+  text-align: center;
+  width: 200px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.product-description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Pie de página */
+.footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 10px; /* Reduce el padding para hacer el footer más pequeño */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em; /* Tamaño de fuente más pequeño */
+  margin-top: auto;
+}
+
+.footer h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.footer p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+/* Estilos para el menú de inicio de sesión */
+.login-menu {
+  position: absolute;
+  top: 10px; /* Ajusta el valor según la separación deseada desde la parte superior */
+  right: 10px; /* Ajusta el valor según la separación deseada desde la parte derecha */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea el contenido hacia la derecha */
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-menu input {
+  margin-bottom: 5px;
+  padding: 8px;
+  width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-menu button {
+  padding: 8px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-menu button:hover {
+  background-color: #0056b3;
+}
+
+.create-user {
+  font-size: 0.9em;
+  color: #007bff;
+  cursor: pointer;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.create-user:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor de imágenes laterales */
+.side-images {
+  position: absolute;
+  left: 10px; /* Ajusta la separación desde el borde izquierdo */
+  top: 50%; /* Posiciona el centro vertical de las imágenes */
+  transform: translateY(-50%); /* Centra verticalmente el contenedor */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre las imágenes */
+  align-items: center;
+}
+
+/* Estilo para cada imagen lateral */
+.side-image img {
+  width: 400px; /* Ajusta el tamaño de las imágenes según sea necesario */
+  height: auto;
+  border-radius: 8px; /* Opcional: redondea los bordes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para mejorar visibilidad */
+}
+
+.side-image p {
+  font-size: 0.8em; /* Tamaño de texto más pequeño */
+  color: #333;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Estilos para el botón de WhatsApp 
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+}
+
+.whatsapp-button img {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+*/
+/* Estilos para el formulario de contacto */
+.contact-form {
+  display: flex;
+  gap: 10px; /* Espacio entre los campos */
+  margin: 20px; /* Espaciado general */
+  justify-content: center; /* Centra el formulario horizontalmente */
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="tel"] {
+  width: 150px; /* Ajusta el ancho según sea necesario */
+}
+
+.contact-form textarea {
+  width: 300px; /* Ajusta el ancho según sea necesario */
+  height: 80px; /* Ajusta la altura según sea necesario */
+  resize: none; /* Evita el redimensionado manual */
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 70px; /* Ajusta este valor dependiendo del alto del footer */
+  right: 20px;
+}
+
+.whatsapp-button img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
